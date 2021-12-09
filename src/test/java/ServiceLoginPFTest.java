@@ -7,11 +7,11 @@ class ServiceLoginPFTest {
     @Test
     public void deveLogarPessoaFisica() {
         IService servico = ServiceFactory.getService("LoginPF");
-        assertEquals("Pessoa física logada no sistema com sucesso", servico.login());
+        assertEquals("Token de acesso a usuário Pessoa física validado no sistema com sucesso", servico.login());
     }
     @Test
     public void deveDeslogarPessoaFisica() {
         IService servico = ServiceFactory.getService("LoginPF");
-        assertEquals("Pessoa física deslogada no sistema com sucesso", servico.logout());
+        assertEquals("Token de acesso a usuário Pessoa física revogado no sistema com sucesso", servico.logout());
     }
 }

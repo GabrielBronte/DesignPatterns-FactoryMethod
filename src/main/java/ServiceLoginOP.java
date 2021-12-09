@@ -1,5 +1,5 @@
 public class ServiceLoginOP {
     public String login() {
-        return "Orgão Público logado no sistema com sucesso";
+        return "Token de acesso a usuário Orgão Público validado no sistema com sucesso";
     }
 }
